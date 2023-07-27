@@ -15,6 +15,7 @@ int main() {
 	system("pause");
 }
 
+//Function takes a const reference to the vector, meaning it wont change in function
 void display(const std::vector<std::string>& inventory) {
 	std::cout << "These are your items: \n";
 	for (std::vector<std::string>::const_iterator iter = inventory.begin(); iter < inventory.end(); ++iter) {		//This is an iterator, dont be afraid. Just a three scope operators (::) makes it look scary
